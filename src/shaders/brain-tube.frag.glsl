@@ -6,5 +6,5 @@ varying float vProgress;
 
 void main() {
   float hideCorners = smoothstep(1., 0.9, vUv.x) * smoothstep(0., 0.1, vUv.x);
-  gl_FragColor.rgba = vec4(mix(color, color * 0.25, vProgress), hideCorners);
+  gl_FragColor.rgba = vec4(mix(color, color * 0.05, vProgress), hideCorners);
 }
