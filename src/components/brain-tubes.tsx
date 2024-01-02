@@ -34,7 +34,7 @@ const Tube = ({ curve }: { curve: THREE.CatmullRomCurve3 }) => {
 
   return (
     <mesh>
-      <tubeGeometry args={[curve, 64, 0.001, 2, false]} />
+      <tubeGeometry args={[curve, 64, 0.0005, 2, false]} />
       <brainMaterial
         ref={brainMat}
         transparent={true}
